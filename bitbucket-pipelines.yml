@@ -1,0 +1,10 @@
+image: maven:3.9.6-eclipse-temurin-21-alpine
+
+pipelines:
+  default:
+    - step:
+        name: "Build and Test"
+        caches:
+          - maven
+        script:
+          - mvn clean package

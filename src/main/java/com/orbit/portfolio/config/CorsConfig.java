@@ -10,7 +10,7 @@ public class CorsConfig implements WebMvcConfigurer{
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOrigins("http://localhost:3000", "http://localhost:5173", "https://portfolio-manager-production.up.railway.app", "https://orbitmanage-frontend-production.up.railway.app/")
+                .allowedOrigins("http://localhost:3000", "http://localhost:5173", "https://orbitmanage-backend-production.up.railway.app", "https://orbitmanage-frontend-production.up.railway.app/")
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true)
